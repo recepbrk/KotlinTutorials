@@ -1,4 +1,4 @@
-package Basics.controlflow
+package `2 Basics`.controlflow
 
 fun main() {
     print("Öğrenci misin ?")
