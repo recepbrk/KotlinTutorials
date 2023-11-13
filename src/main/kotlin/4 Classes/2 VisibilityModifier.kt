@@ -7,9 +7,10 @@ package `4 Classes`
  * Bunun sebebi top level tanımlamaların mirası alınamıyor .Bu yüzden protected tanımlama yapamıyoruz.
  */
 private val identityNumber =12345678912 // Bu bir Top-Level tanımlamadır.
-    open
 
-class Foo() {
+
+
+open class Foo() {
     private val name = "Recep"  // Sadece bulunduğu class ta kullanılabilir.
     public var surName = "Güzel" // Her yerden erişim sağlanabilir.
     internal val age =   21         //Aynı modül içerisindeki herhangi bir sınıftan erişilebilir.Başka modülden erişilemez.
