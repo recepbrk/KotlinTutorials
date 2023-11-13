@@ -1,5 +1,8 @@
 package `3 Functions`
 
+import java.util.*
+import kotlin.concurrent.schedule
+
 fun main() {
     /**
      * Fonksiyonlar Kotlinde "first class sitizen'dır.Yani değişkenlere değer olarak atanabilir,başka fonksiyonlara
@@ -61,5 +64,32 @@ fun main() {
     }
     foo(::logPrint)
 
+    /**
+     *Higher Order Function'a parametre tanımlarken sadece değişken tipini tanımlayarak (değişken adı olmadan) fonk. yazılabilir.
+     */
+    fun getItemClickListener(onClick:(String) -> Unit){
+
+        println("tıklama işlemi başlatılıyor")
+        Timer().schedule(3000){
+            onClick("Login")
+            println("tılama işlemi bitti.")
+        }
+
+    }
+    /**
+     * Bir Higher Order Function'ın parametreside yine bir Higher Order Function olabilir
+     */
+
+ /*  infix fun News.filterNews(getFilter:(filterType:String,getFilterName:()->Unit)){
+        getFilter("filterType"){
+            "String return label"
+        }
+    }
+    infix fun News.read(readTitle:(title:String) -> Unit){
+
+        readTitle("codemy is awesome")
+    }
+*/
 
 }
+
