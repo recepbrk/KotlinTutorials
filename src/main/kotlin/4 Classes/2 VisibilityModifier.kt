@@ -13,13 +13,14 @@ private val identityNumber =12345678912 // Bu bir Top-Level tanımlamadır.
 open class Foo() {
     private val name = "Recep"  // Sadece bulunduğu class ta kullanılabilir.
     public var surName = "Güzel" // Her yerden erişim sağlanabilir.
-    internal val age =   21         //Aynı modül içerisindeki herhangi bir sınıftan erişilebilir.Başka modülden erişilemez.
+    internal var age =   21         //Aynı modül içerisindeki herhangi bir sınıftan erişilebilir.Başka modülden erişilemez.
     protected val email = "recepgzelr@gmail.com"  //  Sadece kendi  içerisinde ve miras alan sınıflarda kullanılır.
 
     fun printName() {
         println("Merhaba$name")
         println("Surname$surName")
         println("Email$email")
+        println("age$age")
 
         /**
          * -------------------------------Youtube Örneği-------------------------------------------------------
@@ -66,6 +67,6 @@ fun main() {
     //foo.name="akaka"  Erişim sağlanamıyor
     foo.surName = "hello"
     //foo.email="hello"  Erişim sağlanmıyor
-
+    foo.age=5
     foo.downloadVideo("www.youtube.com") // bu fonksiyona erişir ama indirme işlemini yapan ve reklam gösteren fonk. erişemez.
 }
