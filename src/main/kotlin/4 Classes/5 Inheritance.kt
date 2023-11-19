@@ -10,8 +10,16 @@ package `4 Classes`
  * Polimorfizm -> Üst class da yapılan fonksiyon işleminin diğer alt classlarda override(değiştirip) edip anlamını ve görevini değiştirip yeni anlam yeni görev kazandırma işlemidir. .
  * Override üzerine yaz demektir.Eğer üsst class ın yaptığı işi yapıp üstüne de farklı işlemler yapmak istiyorsak child classta super keyword ü kullanılır. satır 49 daki gibi .
  * super kelimesi üst classın seçili yeri çalışır örenğin super.drawShape() üst classın drawShape fonk. çalışır.
+ * this kelimesi ise bulunduğu class ı işaret eder .
  *
  * super type -> ya üst classtır ya da interfacedir.
+ * fonksiyon overload -> aynı isimde ve türde olan farklı fonksiyonlara denir farklı olan ise parametreleridir. constructor da olabilr .
+ * fun example(){
+ *
+ * }
+ * fun example(name: String){
+ *
+ * }
  */
 
 open class Shape(val name: String) {
