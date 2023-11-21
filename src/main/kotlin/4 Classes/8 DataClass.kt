@@ -71,8 +71,8 @@ fun main() {
     )
 
     // destructturing declaration
-
-    val (title, description, hashMediaContent, medialist) = newsOne
+ //      companent1  component2   component3        component4
+    val (title,      description, hashMediaContent, medialist) = newsOne
 
     newsOne.mediaList // normal çağırım
     medialist         //  destructturing declaration  çağırımı
