@@ -18,6 +18,8 @@ package `4 Classes`
  *
  * Nested class arka planda static class olarak tutulur.Outer classın üye değişkenine veya üye fonksiyonuna erişemez.
  * Inner class ise arka planda normal bir class olarak tutulur.Outer classsın üye değişkenlerine (private olsa dahi) veya üye fonk. erişim sağlayabilir.
+ *
+ * Nested classı çağırırken outer class'ın nesnesini oluşturamayız(oluşturursak bizi memory leak e götürür.) Ama inner classı çağırırken outer classın nesnesini üretmek lazım.
  */
 fun main() {
     val outer = Outer()
