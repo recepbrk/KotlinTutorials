@@ -31,7 +31,7 @@ value class BankAccount3(val balance: Int) : Print {
 /**
  * value class'lar @JvmInline annotation olmadan henüz kullanılamıyorlar.
  *
- * value class'lar şuan için sadece tekbirdeğişken kabul etmektedir.Birden fazla değişkene izin verilmemektedir.
+ * value class'lar şuan için sadece tek bir değişken kabul etmektedir.Birden fazla değişkene izin verilmemektedir.
  * Ancak value class'ların dökümantasonunda inline classların ileride birden fazla değişken almasına
  * izin verileceği yazmaktadır.
  *
@@ -43,7 +43,7 @@ value class BankAccount3(val balance: Int) : Print {
  * Bizim nesne oluştururken gördüğümüz şey aslında const. içindeki değişkenin kendisi.
  *
  * Inline classlar içinde property tanımlamasına izin verilir.Ancak bu property'nin backing field'ı olamaz.
- * Inline classlar herhangi bir interface2i implement edilebilir.bir başka class'ı  miras alamazlar.
+ * Inline classlar herhangi bir interface'i implement edilebilir.bir başka class'ı  miras alamazlar.
  *
  * Inline calsslar miras alınamaz.Çünkü default olarak final'lardır ve değiştirilemezler.
  * Open keywor'üyle beraber kullanılamaz. finalkeyword'ü vermek de reduldant uyarısı verir.
